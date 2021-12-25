@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_real_world_ore:blocks/iron_block_hematite",
+    "up": "the_real_world_ore:blocks/iron_block_hematite",
+    "north": "the_real_world_ore:blocks/iron_block_hematite",
+    "east": "the_real_world_ore:blocks/iron_block_hematite",
+    "south": "the_real_world_ore:blocks/iron_block_hematite",
+    "west": "the_real_world_ore:blocks/iron_block_hematite",
+    "particle": "the_real_world_ore:blocks/iron_block_hematite"
+  }
+}

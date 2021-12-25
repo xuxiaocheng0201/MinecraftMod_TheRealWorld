@@ -14,3 +14,8 @@ item.iron_ingot_magnetite.name=Magnetite Iron Ingot
 item.iron_nugget_magnetite.name=Magnetite Iron Nugget
 tile.iron_ore_magnetite.name=Magnetite Iron Ore
 tile.iron_block_magnetite.name=Magnetite Iron Block
+
+item.iron_ingot_hematite.name=Hematite Iron Ingot
+item.iron_nugget_hematite.name=Hematite Iron Nugget
+tile.iron_ore_hematite.name=Hematite Iron Ore
+tile.iron_block_hematite.name=Hematite Iron Block
