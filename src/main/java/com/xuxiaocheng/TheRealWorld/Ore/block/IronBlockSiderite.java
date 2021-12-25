@@ -39,6 +39,7 @@ public class IronBlockSiderite extends BlockBase {
         Item item = new ItemBlock(this);
         item.setRegistryName(this.getRegistryName());
         event.getRegistry().register(item);
+        OreDictionary.registerOre("blockIron", this);
         OreDictionary.registerOre("blockIronSiderite", item);
     }
 

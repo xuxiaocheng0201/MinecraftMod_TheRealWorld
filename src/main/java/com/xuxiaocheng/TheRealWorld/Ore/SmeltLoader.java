@@ -1,8 +1,6 @@
 package com.xuxiaocheng.TheRealWorld.Ore;
 
-import com.xuxiaocheng.TheRealWorld.Ore.smelt.SmeltIronMagnetite;
-import com.xuxiaocheng.TheRealWorld.Ore.smelt.SmeltIronPyrite;
-import com.xuxiaocheng.TheRealWorld.Ore.smelt.SmeltIronSiderite;
+import com.xuxiaocheng.TheRealWorld.Ore.smelt.*;
 
 public class SmeltLoader {
     public static void load() {
@@ -13,6 +11,8 @@ public class SmeltLoader {
         SmeltIronPyrite.register();
         Log.logger(Log.LOGGER_LEVEL.DEBUG, "Register SmeltIronMagnetite.");
         SmeltIronMagnetite.register();
+        Log.logger(Log.LOGGER_LEVEL.DEBUG, "Register SmeltIronHematite.");
+        SmeltIronHematite.register();
         Log.logger(Log.LOGGER_LEVEL.DEBUG, "SmeltLoader load finished.");
     }
 }

@@ -16,6 +16,8 @@ public class ItemLoader {
     public static ItemBase IRON_NUGGET_PYRITE;
     public static ItemBase IRON_INGOT_MAGNETITE;
     public static ItemBase IRON_NUGGET_MAGNETITE;
+    public static ItemBase IRON_INGOT_HEMATITE;
+    public static ItemBase IRON_NUGGET_HEMATITE;
 
     public static void load() {
         Log.logger(Log.LOGGER_LEVEL.DEBUG, "ItemLoad load starting.");
@@ -31,6 +33,10 @@ public class ItemLoader {
         IRON_INGOT_MAGNETITE = new IronIngotMagnetite();
         Log.logger(Log.LOGGER_LEVEL.DEBUG, "Instantiating IronNuggetMagnetite.");
         IRON_NUGGET_MAGNETITE = new IronNuggetMagnetite();
+        Log.logger(Log.LOGGER_LEVEL.DEBUG, "Instantiating IronIngotHematite.");
+        IRON_INGOT_HEMATITE = new IronIngotHematite();
+        Log.logger(Log.LOGGER_LEVEL.DEBUG, "Instantiating IronNuggetHematite.");
+        IRON_NUGGET_HEMATITE = new IronNuggetHematite();
         Log.logger(Log.LOGGER_LEVEL.DEBUG, "ItemLoader load finished.");
     }
 }

@@ -16,6 +16,8 @@ public class BlockLoader {
     public static BlockBase IRON_BLOCK_PYRITE;
     public static BlockBase IRON_ORE_MAGNETITE;
     public static BlockBase IRON_BLOCK_MAGNETITE;
+    public static BlockBase IRON_ORE_HEMATITE;
+    public static BlockBase IRON_BLOCK_HEMATITE;
 
     public static void load() {
         Log.logger(Log.LOGGER_LEVEL.DEBUG, "BlockLoader load starting.");
@@ -31,6 +33,10 @@ public class BlockLoader {
         IRON_ORE_MAGNETITE = new IronOreMagnetite();
         Log.logger(Log.LOGGER_LEVEL.DEBUG, "Instantiating IronBlockMagnetite.");
         IRON_BLOCK_MAGNETITE = new IronBlockMagnetite();
+        Log.logger(Log.LOGGER_LEVEL.DEBUG, "Instantiating IronOreHematite");
+        IRON_ORE_HEMATITE = new IronOreHematite();
+        Log.logger(Log.LOGGER_LEVEL.DEBUG, "Instantiating IronBlockHematite.");
+        IRON_BLOCK_HEMATITE = new IronBlockHematite();
         Log.logger(Log.LOGGER_LEVEL.DEBUG, "BlockLoader load finished.");
     }
 }

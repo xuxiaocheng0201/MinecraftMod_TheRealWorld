@@ -23,6 +23,7 @@ public class IronNuggetSiderite extends ItemBase {
     @SubscribeEvent
     public void register(RegistryEvent.Register<Item> event) {
         event.getRegistry().register(this);
+        OreDictionary.registerOre("nuggetIron", this);
         OreDictionary.registerOre("nuggetIronSiderite", this);
     }
 

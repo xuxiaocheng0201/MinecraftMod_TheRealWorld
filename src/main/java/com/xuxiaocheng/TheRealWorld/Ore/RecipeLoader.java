@@ -1,8 +1,6 @@
 package com.xuxiaocheng.TheRealWorld.Ore;
 
-import com.xuxiaocheng.TheRealWorld.Ore.recipe.RecipeIronMagnetite;
-import com.xuxiaocheng.TheRealWorld.Ore.recipe.RecipeIronPyrite;
-import com.xuxiaocheng.TheRealWorld.Ore.recipe.RecipeIronSiderite;
+import com.xuxiaocheng.TheRealWorld.Ore.recipe.*;
 import net.minecraft.util.ResourceLocation;
 
 public class RecipeLoader {
@@ -15,6 +13,8 @@ public class RecipeLoader {
         RecipeIronPyrite.register();
         Log.logger(Log.LOGGER_LEVEL.DEBUG, "Register RecipeIronMagnetite.");
         RecipeIronMagnetite.register();
+        Log.logger(Log.LOGGER_LEVEL.DEBUG, "Register RecipeIronHematite.");
+        RecipeIronHematite.register();
         Log.logger(Log.LOGGER_LEVEL.DEBUG, "RecipeLoad load finished.");
     }
 }

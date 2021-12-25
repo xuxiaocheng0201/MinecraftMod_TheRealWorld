@@ -10,10 +10,21 @@ import net.minecraftforge.common.config.Config;
 public class ConfigMain {
     @Config.Comment("The log level, can be chosen in INFO, WARN, ERROR, DEBUG, ALL")
     @Config.LangKey(ConfigLoader.tooltip_title + ".log_level")
-    public static Log.LOGGER_LEVEL log_level = Log.LOGGER_LEVEL.ERROR;
+    public static Log.LOGGER_LEVEL log_level = Log.LOGGER_LEVEL.WARN;
 
     @Config.Comment("Generate Iron Siderite configuration.")
     @Config.LangKey(ConfigLoader.tooltip_title + ".config_generate_iron_siderite")
     public static ConfigGenerateIronSiderite config_generate_iron_siderite = new ConfigGenerateIronSiderite();
 
+    @Config.Comment("Generate Iron Pyrite configuration.")
+    @Config.LangKey(ConfigLoader.tooltip_title + ".config_generate_iron_pyrite")
+    public static ConfigGenerateIronPyrite config_generate_iron_pyrite = new ConfigGenerateIronPyrite();
+
+    @Config.Comment("Generate Iron Magnetite configuration.")
+    @Config.LangKey(ConfigLoader.tooltip_title + ".config_generate_iron_magnetite")
+    public static ConfigGenerateIronMagnetite config_generate_iron_magnetite = new ConfigGenerateIronMagnetite();
+
+    @Config.Comment("Generate Iron Hematite configuration.")
+    @Config.LangKey(ConfigLoader.tooltip_title + ".config_generate_iron_hematite")
+    public static ConfigGenerateIronHematite config_generate_iron_hematite = new ConfigGenerateIronHematite();
 }

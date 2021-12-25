@@ -1,6 +1,6 @@
 package com.xuxiaocheng.TheRealWorld.Ore;
 
-import com.xuxiaocheng.TheRealWorld.Ore.creativetab.CreativeTabOre;
+import com.xuxiaocheng.TheRealWorld.Ore.creativetab.*;
 import net.minecraft.creativetab.CreativeTabs;
 
 public class CreativeTabsLoader {

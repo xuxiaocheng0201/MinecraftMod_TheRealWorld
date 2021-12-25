@@ -14,9 +14,9 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.oredict.OreDictionary;
 
 @Mod.EventBusSubscriber(modid = Reference.MOD_ID)
-public class IronNuggetPyrite extends ItemBase {
-    public IronNuggetPyrite() {
-        super("iron_nugget_pyrite", CreativeTabsLoader.TheRealWorld_Ore);
+public class IronNuggetHematite extends ItemBase {
+    public IronNuggetHematite() {
+        super("iron_nugget_hematite", CreativeTabsLoader.TheRealWorld_Ore);
         PreRegister(ItemLoader.ITEMS);
     }
 
@@ -24,7 +24,7 @@ public class IronNuggetPyrite extends ItemBase {
     public void register(RegistryEvent.Register<Item> event) {
         event.getRegistry().register(this);
         OreDictionary.registerOre("nuggetIron", this);
-        OreDictionary.registerOre("nuggetIronPyrite", this);
+        OreDictionary.registerOre("nuggetIronHematite", this);
     }
 
     @SubscribeEvent

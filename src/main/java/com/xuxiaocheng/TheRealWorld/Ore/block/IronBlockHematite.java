@@ -18,12 +18,12 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.oredict.OreDictionary;
 
 @Mod.EventBusSubscriber(modid = Reference.MOD_ID)
-public class IronBlockMagnetite extends BlockBase {
-    public IronBlockMagnetite() {
-        super("iron_block_magnetite", Material.IRON, CreativeTabsLoader.TheRealWorld_Ore);
-        this.setHardness(6);
-        this.setHarvestLevel("pickaxe", 2);
-        this.setResistance(23);
+public class IronBlockHematite extends BlockBase {
+    public IronBlockHematite() {
+        super("iron_block_hematite", Material.IRON, CreativeTabsLoader.TheRealWorld_Ore);
+        this.setHardness(3);
+        this.setHarvestLevel("pickaxe", 1);
+        this.setResistance(15);
         PreRegister(BlockLoader.BLOCKS, ItemLoader.ITEMS);
     }
 
@@ -40,7 +40,7 @@ public class IronBlockMagnetite extends BlockBase {
         item.setRegistryName(this.getRegistryName());
         event.getRegistry().register(item);
         OreDictionary.registerOre("blockIron", this);
-        OreDictionary.registerOre("blockIronMagnetite", item);
+        OreDictionary.registerOre("blockIronHematite", item);
     }
 
     @SubscribeEvent

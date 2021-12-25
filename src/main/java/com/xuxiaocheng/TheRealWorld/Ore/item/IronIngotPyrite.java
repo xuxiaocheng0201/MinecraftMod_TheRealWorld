@@ -23,6 +23,7 @@ public class IronIngotPyrite extends ItemBase {
     @SubscribeEvent
     public void register(RegistryEvent.Register<Item> event) {
         event.getRegistry().register(this);
+        OreDictionary.registerOre("ingotIron", this);
         OreDictionary.registerOre("ingotIronPyrite", this);
     }
 
