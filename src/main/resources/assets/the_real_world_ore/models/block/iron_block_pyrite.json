@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_real_world_ore:blocks/iron_block_pyrite",
+    "up": "the_real_world_ore:blocks/iron_block_pyrite",
+    "north": "the_real_world_ore:blocks/iron_block_pyrite",
+    "east": "the_real_world_ore:blocks/iron_block_pyrite",
+    "south": "the_real_world_ore:blocks/iron_block_pyrite",
+    "west": "the_real_world_ore:blocks/iron_block_pyrite",
+    "particle": "the_real_world_ore:blocks/iron_block_pyrite"
+  }
+}

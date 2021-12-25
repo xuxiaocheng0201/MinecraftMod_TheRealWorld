@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_real_world_ore:blocks/iron_ore_magnetite",
+    "up": "the_real_world_ore:blocks/iron_ore_magnetite",
+    "north": "the_real_world_ore:blocks/iron_ore_magnetite",
+    "east": "the_real_world_ore:blocks/iron_ore_magnetite",
+    "south": "the_real_world_ore:blocks/iron_ore_magnetite",
+    "west": "the_real_world_ore:blocks/iron_ore_magnetite",
+    "particle": "the_real_world_ore:blocks/iron_ore_magnetite"
+  }
+}

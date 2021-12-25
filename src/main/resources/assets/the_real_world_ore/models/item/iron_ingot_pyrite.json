@@ -1,0 +1,7 @@
+
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "the_real_world_ore:items/iron_ingot_pyrite"
+  }
+}

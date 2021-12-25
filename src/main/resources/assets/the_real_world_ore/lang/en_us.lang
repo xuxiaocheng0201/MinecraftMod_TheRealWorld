@@ -1,0 +1,16 @@
+itemGroup.TheRealWorld_Ore=The Real World: Ore
+
+item.iron_ingot_siderite.name=Siderite Iron Ingot
+item.iron_nugget_siderite.name=Siderite Iron Nugget
+tile.iron_ore_siderite.name=Siderite Iron Ore
+tile.iron_block_siderite.name=Siderite Iron Block
+
+item.iron_ingot_pyrite.name=Pyrite Iron Ingot
+item.iron_nugget_pyrite.name=Pyrite Iron Nugget
+tile.iron_ore_pyrite.name=Pyrite Iron Ore
+tile.iron_block_pyrite.name=Pyrite Iron Block
+
+item.iron_ingot_magnetite.name=Magnetite Iron Ingot
+item.iron_nugget_magnetite.name=Magnetite Iron Nugget
+tile.iron_ore_magnetite.name=Magnetite Iron Ore
+tile.iron_block_magnetite.name=Magnetite Iron Block

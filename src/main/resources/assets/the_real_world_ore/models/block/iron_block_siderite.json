@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_real_world_ore:blocks/iron_block_siderite",
+    "up": "the_real_world_ore:blocks/iron_block_siderite",
+    "north": "the_real_world_ore:blocks/iron_block_siderite",
+    "east": "the_real_world_ore:blocks/iron_block_siderite",
+    "south": "the_real_world_ore:blocks/iron_block_siderite",
+    "west": "the_real_world_ore:blocks/iron_block_siderite",
+    "particle": "the_real_world_ore:blocks/iron_block_siderite"
+  }
+}
