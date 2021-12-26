@@ -20,22 +20,22 @@ public class ItemLoader {
     public static ItemBase IRON_NUGGET_HEMATITE;
 
     public static void load() {
-        Log.logger(Log.LOGGER_LEVEL.DEBUG, "ItemLoad load starting.");
-        Log.logger(Log.LOGGER_LEVEL.DEBUG, "Instantiating IronIngotSiderite.");
+        Log.logger(Log.LOGGER_LEVEL.DEBUG, "ItemLoader load starting.");
+        Log.logger(Log.LOGGER_LEVEL.ALL, "Instantiating IronIngotSiderite.");
         IRON_INGOT_SIDERITE = new IronIngotSiderite();
-        Log.logger(Log.LOGGER_LEVEL.DEBUG, "Instantiating IronNuggetSiderite.");
+        Log.logger(Log.LOGGER_LEVEL.ALL, "Instantiating IronNuggetSiderite.");
         IRON_NUGGET_SIDERITE = new IronNuggetSiderite();
-        Log.logger(Log.LOGGER_LEVEL.DEBUG, "Instantiating IronIngotPyrite.");
+        Log.logger(Log.LOGGER_LEVEL.ALL, "Instantiating IronIngotPyrite.");
         IRON_INGOT_PYRITE = new IronIngotPyrite();
-        Log.logger(Log.LOGGER_LEVEL.DEBUG, "Instantiating IronNuggetPyrite.");
+        Log.logger(Log.LOGGER_LEVEL.ALL, "Instantiating IronNuggetPyrite.");
         IRON_NUGGET_PYRITE = new IronNuggetPyrite();
-        Log.logger(Log.LOGGER_LEVEL.DEBUG, "Instantiating IronIngotMagnetite.");
+        Log.logger(Log.LOGGER_LEVEL.ALL, "Instantiating IronIngotMagnetite.");
         IRON_INGOT_MAGNETITE = new IronIngotMagnetite();
-        Log.logger(Log.LOGGER_LEVEL.DEBUG, "Instantiating IronNuggetMagnetite.");
+        Log.logger(Log.LOGGER_LEVEL.ALL, "Instantiating IronNuggetMagnetite.");
         IRON_NUGGET_MAGNETITE = new IronNuggetMagnetite();
-        Log.logger(Log.LOGGER_LEVEL.DEBUG, "Instantiating IronIngotHematite.");
+        Log.logger(Log.LOGGER_LEVEL.ALL, "Instantiating IronIngotHematite.");
         IRON_INGOT_HEMATITE = new IronIngotHematite();
-        Log.logger(Log.LOGGER_LEVEL.DEBUG, "Instantiating IronNuggetHematite.");
+        Log.logger(Log.LOGGER_LEVEL.ALL, "Instantiating IronNuggetHematite.");
         IRON_NUGGET_HEMATITE = new IronNuggetHematite();
         Log.logger(Log.LOGGER_LEVEL.DEBUG, "ItemLoader load finished.");
     }

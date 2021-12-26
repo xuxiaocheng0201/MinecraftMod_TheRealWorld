@@ -21,21 +21,21 @@ public class BlockLoader {
 
     public static void load() {
         Log.logger(Log.LOGGER_LEVEL.DEBUG, "BlockLoader load starting.");
-        Log.logger(Log.LOGGER_LEVEL.DEBUG, "Instantiating IronOreSiderite.");
+        Log.logger(Log.LOGGER_LEVEL.ALL, "Instantiating IronOreSiderite.");
         IRON_ORE_SIDERITE = new IronOreSiderite();
-        Log.logger(Log.LOGGER_LEVEL.DEBUG, "Instantiating IronBlockSiderite.");
+        Log.logger(Log.LOGGER_LEVEL.ALL, "Instantiating IronBlockSiderite.");
         IRON_BLOCK_SIDERITE = new IronBlockSiderite();
-        Log.logger(Log.LOGGER_LEVEL.DEBUG, "Instantiating IronOrePyrite.");
+        Log.logger(Log.LOGGER_LEVEL.ALL, "Instantiating IronOrePyrite.");
         IRON_ORE_PYRITE = new IronOrePyrite();
-        Log.logger(Log.LOGGER_LEVEL.DEBUG, "Instantiating IronBlockPyrite.");
+        Log.logger(Log.LOGGER_LEVEL.ALL, "Instantiating IronBlockPyrite.");
         IRON_BLOCK_PYRITE = new IronBlockPyrite();
-        Log.logger(Log.LOGGER_LEVEL.DEBUG, "Instantiating IronOreMagnetite");
+        Log.logger(Log.LOGGER_LEVEL.ALL, "Instantiating IronOreMagnetite");
         IRON_ORE_MAGNETITE = new IronOreMagnetite();
-        Log.logger(Log.LOGGER_LEVEL.DEBUG, "Instantiating IronBlockMagnetite.");
+        Log.logger(Log.LOGGER_LEVEL.ALL, "Instantiating IronBlockMagnetite.");
         IRON_BLOCK_MAGNETITE = new IronBlockMagnetite();
-        Log.logger(Log.LOGGER_LEVEL.DEBUG, "Instantiating IronOreHematite");
+        Log.logger(Log.LOGGER_LEVEL.ALL, "Instantiating IronOreHematite");
         IRON_ORE_HEMATITE = new IronOreHematite();
-        Log.logger(Log.LOGGER_LEVEL.DEBUG, "Instantiating IronBlockHematite.");
+        Log.logger(Log.LOGGER_LEVEL.ALL, "Instantiating IronBlockHematite.");
         IRON_BLOCK_HEMATITE = new IronBlockHematite();
         Log.logger(Log.LOGGER_LEVEL.DEBUG, "BlockLoader load finished.");
     }

@@ -1,6 +1,6 @@
-package com.xuxiaocheng.TheRealWorld.Ore;
+package com.xuxiaocheng.TheRealWorld.Biome;
 
-import com.xuxiaocheng.TheRealWorld.Ore.config.ConfigMain;
+import com.xuxiaocheng.TheRealWorld.Biome.config.ConfigMain;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
