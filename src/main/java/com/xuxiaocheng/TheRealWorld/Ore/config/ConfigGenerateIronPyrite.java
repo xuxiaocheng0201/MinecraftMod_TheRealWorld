@@ -10,7 +10,7 @@ public class ConfigGenerateIronPyrite {
 
     @Config.Comment("Generate chance in every chunk.")
     @Config.LangKey(ConfigLoader.tooltip_title + ".configGenerateIronPyrite.chance")
-    @Config.RangeInt(min = 1)
+    @Config.RangeInt(min = 0, max = 100)
     public int chance = 20;
 
     @Config.Comment("Max height Pyrite can be generated.")

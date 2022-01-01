@@ -1,5 +1,6 @@
 package com.xuxiaocheng.TheRealWorld.Ore.worldgen;
 
+import com.xuxiaocheng.TheRealWorld.Core.log.LogBase;
 import com.xuxiaocheng.TheRealWorld.Core.worldgen.WorldGenBase;
 import com.xuxiaocheng.TheRealWorld.Ore.BlockLoader;
 import com.xuxiaocheng.TheRealWorld.Ore.Log;
@@ -13,14 +14,8 @@ import net.minecraftforge.event.terraingen.OreGenEvent;
 import java.util.Random;
 
 public class WorldGenIronHematiteOre extends WorldGenBase {
-    private final WorldGenerator iron_hematite;
-
-    public WorldGenIronHematiteOre(Random random) {
+    public WorldGenIronHematiteOre() {
         super(ConfigMain.config_generate_iron_hematite.chance, OreGenEvent.GenerateMinable.EventType.CUSTOM);
-        int minSize = ConfigMain.config_generate_iron_hematite.minSize;
-        int maxSize = ConfigMain.config_generate_iron_hematite.maxSize;
-        iron_hematite = new WorldGenMinable(BlockLoader.IRON_ORE_HEMATITE.getDefaultState(),
-                minSize + random.nextInt(maxSize - minSize));
     }
 
     @Override
@@ -34,6 +29,10 @@ public class WorldGenIronHematiteOre extends WorldGenBase {
             int posY = minY + random.nextInt(maxY - minY);
             int posZ = pos.getZ() + random.nextInt(15);
             BlockPos blockpos = new BlockPos(posX, posY, posZ);
+            int minSize = ConfigMain.config_generate_iron_hematite.minSize;
+            int maxSize = ConfigMain.config_generate_iron_hematite.maxSize;
+            WorldGenerator iron_hematite = new WorldGenMinable(BlockLoader.IRON_ORE_HEMATITE.getDefaultState(),
+                    minSize + random.nextInt(maxSize - minSize));
             iron_hematite.generate(world, random, blockpos);
         }
         return true;
@@ -42,44 +41,44 @@ public class WorldGenIronHematiteOre extends WorldGenBase {
     public static void FixConfig() {
         final String category = "world_gen_iron_hematite";
         if (ConfigMain.config_generate_iron_hematite.chance < 0) {
-            Log.logger(Log.LOGGER_LEVEL.ERROR, "The value of chance in " + category + " is too small! Now change it to 0.");
+            Log.logger(LogBase.LOGGER_LEVEL.ERROR, "The value of chance in " + category + " is too small! Now change it to 0.");
             ConfigMain.config_generate_iron_hematite.chance = 0;
         }
         if (ConfigMain.config_generate_iron_hematite.chance > 10000) {
-            Log.logger(Log.LOGGER_LEVEL.WARN, "The value of chance in " + category + " is too big. It may reduce the speed of Minecraft start.");
+            Log.logger(LogBase.LOGGER_LEVEL.WARN, "The value of chance in " + category + " is too big. It may reduce the speed of Minecraft start.");
         }
         if (ConfigMain.config_generate_iron_hematite.maxY < 1) {
-            Log.logger(Log.LOGGER_LEVEL.ERROR, "The value of maxY in " + category + " is too small! Now change it to 1");
+            Log.logger(LogBase.LOGGER_LEVEL.ERROR, "The value of maxY in " + category + " is too small! Now change it to 1");
             ConfigMain.config_generate_iron_hematite.maxY = 1;
         }
         if (ConfigMain.config_generate_iron_hematite.maxY > 255) {
-            Log.logger(Log.LOGGER_LEVEL.ERROR, "The value of maxY in " + category + " is too big! Now change it to 255");
+            Log.logger(LogBase.LOGGER_LEVEL.ERROR, "The value of maxY in " + category + " is too big! Now change it to 255");
             ConfigMain.config_generate_iron_hematite.maxY = 255;
         }
         if (ConfigMain.config_generate_iron_hematite.minY < 1) {
-            Log.logger(Log.LOGGER_LEVEL.ERROR, "The value of minY in " + category + " is too small! Now change it to 1");
+            Log.logger(LogBase.LOGGER_LEVEL.ERROR, "The value of minY in " + category + " is too small! Now change it to 1");
             ConfigMain.config_generate_iron_hematite.minY = 1;
         }
         if (ConfigMain.config_generate_iron_hematite.minY > 255) {
-            Log.logger(Log.LOGGER_LEVEL.ERROR, "The value of minY in " + category + " is too big! Now change it to 255");
+            Log.logger(LogBase.LOGGER_LEVEL.ERROR, "The value of minY in " + category + " is too big! Now change it to 255");
             ConfigMain.config_generate_iron_hematite.minY = 255;
         }
         if (ConfigMain.config_generate_iron_hematite.minY > ConfigMain.config_generate_iron_hematite.maxY) {
-            Log.logger(Log.LOGGER_LEVEL.WARN, "The minY is bigger than maxY in " + category + ". Now swap them.");
+            Log.logger(LogBase.LOGGER_LEVEL.WARN, "The minY is bigger than maxY in " + category + ". Now swap them.");
             int temp = ConfigMain.config_generate_iron_hematite.maxY;
             ConfigMain.config_generate_iron_hematite.maxY = ConfigMain.config_generate_iron_hematite.minY;
             ConfigMain.config_generate_iron_hematite.minY = temp;
         }
         if (ConfigMain.config_generate_iron_hematite.maxSize < 1) {
-            Log.logger(Log.LOGGER_LEVEL.ERROR, "The value of maxSize in " + category + " is too small! Now change it to 2");
+            Log.logger(LogBase.LOGGER_LEVEL.ERROR, "The value of maxSize in " + category + " is too small! Now change it to 2");
             ConfigMain.config_generate_iron_hematite.maxSize = 2;
         }
         if (ConfigMain.config_generate_iron_hematite.minSize < 1) {
-            Log.logger(Log.LOGGER_LEVEL.ERROR, "The value of minSize in " + category + " is too small! Now change it to 1");
+            Log.logger(LogBase.LOGGER_LEVEL.ERROR, "The value of minSize in " + category + " is too small! Now change it to 1");
             ConfigMain.config_generate_iron_hematite.minSize = 1;
         }
         if (ConfigMain.config_generate_iron_hematite.minSize > ConfigMain.config_generate_iron_hematite.maxSize) {
-            Log.logger(Log.LOGGER_LEVEL.WARN, "The minSize is bigger than maxSize in " + category + ". Now swap them.");
+            Log.logger(LogBase.LOGGER_LEVEL.WARN, "The minSize is bigger than maxSize in " + category + ". Now swap them.");
             int temp = ConfigMain.config_generate_iron_hematite.maxSize;
             ConfigMain.config_generate_iron_hematite.maxSize = ConfigMain.config_generate_iron_hematite.minSize;
             ConfigMain.config_generate_iron_hematite.minSize = temp;

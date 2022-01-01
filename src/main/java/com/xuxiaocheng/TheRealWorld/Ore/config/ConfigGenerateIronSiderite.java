@@ -10,7 +10,7 @@ public class ConfigGenerateIronSiderite {
 
     @Config.Comment("Generate chance in every chunk.")
     @Config.LangKey(ConfigLoader.tooltip_title + ".configGenerateIronSiderite.chance")
-    @Config.RangeInt(min = 1)
+    @Config.RangeInt(min = 0, max = 100)
     public int chance = 20;
 
     @Config.Comment("Max height Siderite can be generated.")

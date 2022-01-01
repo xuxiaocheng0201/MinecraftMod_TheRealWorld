@@ -10,7 +10,7 @@ public class ConfigGenerateIronMagnetite {
 
     @Config.Comment("Generate chance in every chunk.")
     @Config.LangKey(ConfigLoader.tooltip_title + ".configGenerateIronMagnetite.chance")
-    @Config.RangeInt(min = 1)
+    @Config.RangeInt(min = 0, max = 100)
     public int chance = 20;
 
     @Config.Comment("Max height Magnetite can be generated.")

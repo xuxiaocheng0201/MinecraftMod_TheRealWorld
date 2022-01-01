@@ -1,5 +1,6 @@
 package com.xuxiaocheng.TheRealWorld.Ore;
 
+import com.xuxiaocheng.TheRealWorld.Core.log.LogBase;
 import com.xuxiaocheng.TheRealWorld.Core.worldgen.WorldGenBase;
 import com.xuxiaocheng.TheRealWorld.Ore.config.ConfigMain;
 import com.xuxiaocheng.TheRealWorld.Ore.worldgen.*;
@@ -19,22 +20,26 @@ public class WorldGeneratorLoader {
     public void onOreGenPost(OreGenEvent.Post event) {
         if (ConfigMain.config_generate_iron_siderite.Gen) {
             WorldGenIronSideriteOre.FixConfig();
-            IRON_SIDERITE_ORE_GEN = new WorldGenIronSideriteOre(event.getRand());
+            Log.logger(LogBase.LOGGER_LEVEL.ALL, "Generating Iron Siderite Ore.");
+            IRON_SIDERITE_ORE_GEN = new WorldGenIronSideriteOre();
             IRON_SIDERITE_ORE_GEN.generate(event.getWorld(), event.getRand(), event.getPos());
         }
         if (ConfigMain.config_generate_iron_pyrite.Gen) {
             WorldGenIronPyriteOre.FixConfig();
-            IRON_PYRITE_ORE_GEN = new WorldGenIronPyriteOre(event.getRand());
+            Log.logger(LogBase.LOGGER_LEVEL.ALL, "Generating Iron Pyrite Ore.");
+            IRON_PYRITE_ORE_GEN = new WorldGenIronPyriteOre();
             IRON_PYRITE_ORE_GEN.generate(event.getWorld(), event.getRand(), event.getPos());
         }
         if (ConfigMain.config_generate_iron_magnetite.Gen) {
             WorldGenIronMagnetiteOre.FixConfig();
-            IRON_MAGNETITE_ORE_GEN = new WorldGenIronMagnetiteOre(event.getRand());
+            Log.logger(LogBase.LOGGER_LEVEL.ALL, "Generating Iron Magnetite Ore.");
+            IRON_MAGNETITE_ORE_GEN = new WorldGenIronMagnetiteOre();
             IRON_MAGNETITE_ORE_GEN.generate(event.getWorld(), event.getRand(), event.getPos());
         }
         if (ConfigMain.config_generate_iron_magnetite.Gen) {
             WorldGenIronHematiteOre.FixConfig();
-            IRON_HEMATITE_ORE_GEN = new WorldGenIronHematiteOre(event.getRand());
+            Log.logger(LogBase.LOGGER_LEVEL.ALL, "Generating Iron Hematite Ore.");
+            IRON_HEMATITE_ORE_GEN = new WorldGenIronHematiteOre();
             IRON_HEMATITE_ORE_GEN.generate(event.getWorld(), event.getRand(), event.getPos());
         }
     }

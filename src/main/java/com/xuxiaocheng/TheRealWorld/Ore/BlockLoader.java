@@ -1,6 +1,7 @@
 package com.xuxiaocheng.TheRealWorld.Ore;
 
 import com.xuxiaocheng.TheRealWorld.Core.block.BlockBase;
+import com.xuxiaocheng.TheRealWorld.Core.log.LogBase;
 import com.xuxiaocheng.TheRealWorld.Ore.block.*;
 import net.minecraft.block.Block;
 
@@ -20,23 +21,23 @@ public class BlockLoader {
     public static BlockBase IRON_BLOCK_HEMATITE;
 
     public static void load() {
-        Log.logger(Log.LOGGER_LEVEL.DEBUG, "BlockLoader load starting.");
-        Log.logger(Log.LOGGER_LEVEL.ALL, "Instantiating IronOreSiderite.");
+        Log.logger(LogBase.LOGGER_LEVEL.DEBUG, "BlockLoader load starting.");
+        Log.logger(LogBase.LOGGER_LEVEL.ALL, "Instantiating IronOreSiderite.");
         IRON_ORE_SIDERITE = new IronOreSiderite();
-        Log.logger(Log.LOGGER_LEVEL.ALL, "Instantiating IronBlockSiderite.");
+        Log.logger(LogBase.LOGGER_LEVEL.ALL, "Instantiating IronBlockSiderite.");
         IRON_BLOCK_SIDERITE = new IronBlockSiderite();
-        Log.logger(Log.LOGGER_LEVEL.ALL, "Instantiating IronOrePyrite.");
+        Log.logger(LogBase.LOGGER_LEVEL.ALL, "Instantiating IronOrePyrite.");
         IRON_ORE_PYRITE = new IronOrePyrite();
-        Log.logger(Log.LOGGER_LEVEL.ALL, "Instantiating IronBlockPyrite.");
+        Log.logger(LogBase.LOGGER_LEVEL.ALL, "Instantiating IronBlockPyrite.");
         IRON_BLOCK_PYRITE = new IronBlockPyrite();
-        Log.logger(Log.LOGGER_LEVEL.ALL, "Instantiating IronOreMagnetite");
+        Log.logger(LogBase.LOGGER_LEVEL.ALL, "Instantiating IronOreMagnetite");
         IRON_ORE_MAGNETITE = new IronOreMagnetite();
-        Log.logger(Log.LOGGER_LEVEL.ALL, "Instantiating IronBlockMagnetite.");
+        Log.logger(LogBase.LOGGER_LEVEL.ALL, "Instantiating IronBlockMagnetite.");
         IRON_BLOCK_MAGNETITE = new IronBlockMagnetite();
-        Log.logger(Log.LOGGER_LEVEL.ALL, "Instantiating IronOreHematite");
+        Log.logger(LogBase.LOGGER_LEVEL.ALL, "Instantiating IronOreHematite");
         IRON_ORE_HEMATITE = new IronOreHematite();
-        Log.logger(Log.LOGGER_LEVEL.ALL, "Instantiating IronBlockHematite.");
+        Log.logger(LogBase.LOGGER_LEVEL.ALL, "Instantiating IronBlockHematite.");
         IRON_BLOCK_HEMATITE = new IronBlockHematite();
-        Log.logger(Log.LOGGER_LEVEL.DEBUG, "BlockLoader load finished.");
+        Log.logger(LogBase.LOGGER_LEVEL.DEBUG, "BlockLoader load finished.");
     }
 }

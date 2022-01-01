@@ -13,8 +13,12 @@ public abstract class WorldGenBase extends WorldGenerator {
     private static int chance = 1;
     private static OreGenEvent.GenerateMinable.EventType type = OreGenEvent.GenerateMinable.EventType.CUSTOM;
 
-    public WorldGenBase(int chances, OreGenEvent.GenerateMinable.EventType types) {
+    public WorldGenBase(int chances) {
         chance = chances;
+    }
+
+    public WorldGenBase(int chances, OreGenEvent.GenerateMinable.EventType types) {
+        this(chances);
         type = types;
     }
 
