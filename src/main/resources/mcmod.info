@@ -1,5 +1,19 @@
 [
 {
+  "modid": "the_real_world",
+  "name": "The Real World",
+  "description": "A simple mod for reality. The second mod made by xuxiaocheng.",
+  "version": "1.2.0",
+  "mcversion": "1.12.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["xuxiaocheng"],
+  "credits": "The Forge and FML guys, for making this example",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+},
+{
   "modid": "the_real_world_biome",
   "name": "The Real World Biome Part",
   "description": "A simple mod for reality. The second mod made by xuxiaocheng.",
@@ -26,5 +40,19 @@
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
-}
+},
+ {
+   "modid": "the_real_world_weigh",
+   "name": "The Real World Weight Part",
+   "description": "A simple mod for reality. The second mod made by xuxiaocheng.",
+   "version": "1.0.2",
+   "mcversion": "1.12.2",
+   "url": "",
+   "updateUrl": "",
+   "authorList": ["xuxiaocheng"],
+   "credits": "The Forge and FML guys, for making this example",
+   "logoFile": "",
+   "screenshots": [],
+   "dependencies": []
+ }
 ]
