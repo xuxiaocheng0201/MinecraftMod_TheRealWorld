@@ -10,7 +10,7 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION,
-        acceptedMinecraftVersions = Reference.ACCEPTED_VERSION, updateJSON = Reference.UPDATE_JSON,
+        acceptedMinecraftVersions = Reference.ACCEPTED_VERSION,
         guiFactory = "com.xuxiaocheng.TheRealWorld.Biome.ConfigLoader",
         dependencies = "required-after:the_real_world_ore@[1.0.5,);")
 public class TheRealWorld_Biome {

@@ -11,6 +11,7 @@ import net.minecraftforge.common.config.Config;
 public class ConfigMain {
     @Config.Comment("The log level, can be chosen in INFO, WARN, ERROR, DEBUG, ALL")
     @Config.LangKey(ConfigLoader.tooltip_title + ".log_level")
+    @Config.RequiresMcRestart
     public static LogBase.LOGGER_LEVEL log_level = LogBase.LOGGER_LEVEL.WARN;
 
     @Config.Comment("Generate Iron Siderite configuration.")
